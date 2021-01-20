@@ -1,0 +1,40 @@
+.web-rtc-page {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  button {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    .video-block {
+      height: 200px;
+      width: 300px;
+    }
+  }
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0px auto 10px auto;
+  position: relative;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-top: 10px solid #ffffff;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
